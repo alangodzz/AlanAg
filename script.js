@@ -76,6 +76,94 @@ const products = [
         rating: 4.7,
         reviews: 58,
         badge: "OFERTA"
+    },
+    {
+        id: 8,
+        name: "Placa de Vídeo RTX 4090 Beast OC",
+        category: "hardware",
+        price: 13999.00,
+        oldPrice: 15499.00,
+        image: "https://images.unsplash.com/photo-1591488320449-011701bb6704?q=80&w=600&auto=format&fit=crop",
+        rating: 5.0,
+        reviews: 19,
+        badge: "EXTREMO"
+    },
+    {
+        id: 9,
+        name: "Mousepad Gamer RGB Orion Extended (90x40cm)",
+        category: "perifericos",
+        price: 189.00,
+        oldPrice: 249.00,
+        image: "https://images.unsplash.com/photo-1616440347437-b1c73416efc2?q=80&w=600&auto=format&fit=crop",
+        rating: 4.8,
+        reviews: 42,
+        badge: "MAIS VENDIDO"
+    },
+    {
+        id: 10,
+        name: "Mousepad Gamer Speed Nebula Pro",
+        category: "perifericos",
+        price: 99.00,
+        oldPrice: 139.00,
+        image: "https://images.unsplash.com/photo-1632292224971-0d45778b3002?q=80&w=600&auto=format&fit=crop",
+        rating: 4.6,
+        reviews: 89,
+        badge: "SPEED"
+    },
+    {
+        id: 11,
+        name: "Placa de Vídeo RX 7900 XTX Nitro",
+        category: "hardware",
+        price: 7499.00,
+        oldPrice: 8299.00,
+        image: "https://images.unsplash.com/photo-1587202372775-e229f172b9d7?q=80&w=600&auto=format&fit=crop",
+        rating: 4.8,
+        reviews: 24,
+        badge: "AMD RADEON"
+    },
+    {
+        id: 12,
+        name: "Microfone Condensador Streamer RGB",
+        category: "perifericos",
+        price: 529.00,
+        oldPrice: 649.00,
+        image: "https://images.unsplash.com/photo-1590608897129-79da98d15969?q=80&w=600&auto=format&fit=crop",
+        rating: 4.9,
+        reviews: 55,
+        badge: "STREAMER"
+    },
+    {
+        id: 13,
+        name: "Memória RAM RGB DDR5 32GB (2x16GB) 6000MHz",
+        category: "hardware",
+        price: 949.00,
+        oldPrice: 1149.00,
+        image: "https://images.unsplash.com/photo-1562976540-1502c2145186?q=80&w=600&auto=format&fit=crop",
+        rating: 4.9,
+        reviews: 73,
+        badge: "DDR5"
+    },
+    {
+        id: 14,
+        name: "Monitor Gamer Curvo 34' UltraWide 165Hz",
+        category: "perifericos",
+        price: 2899.00,
+        oldPrice: 3499.00,
+        image: "https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?q=80&w=600&auto=format&fit=crop",
+        rating: 4.7,
+        reviews: 61,
+        badge: "DESTAQUE"
+    },
+    {
+        id: 15,
+        name: "Elden Ring - Shadow of the Erdtree Edition",
+        category: "jogos",
+        price: 299.00,
+        oldPrice: 349.00,
+        image: "https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=600&auto=format&fit=crop",
+        rating: 5.0,
+        reviews: 312,
+        badge: "GOTY"
     }
 ];
 
