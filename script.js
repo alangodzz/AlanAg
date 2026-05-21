@@ -164,6 +164,83 @@ const products = [
         rating: 5.0,
         reviews: 312,
         badge: "GOTY"
+    },
+    {
+        id: 16,
+        name: "Console PlayStation 5 Slim 1TB",
+        category: "consoles",
+        price: 3899.00,
+        oldPrice: 4299.00,
+        image: "https://images.unsplash.com/photo-1606813907291-d86efa9b94db?q=80&w=600&auto=format&fit=crop",
+        rating: 4.9,
+        reviews: 243,
+        badge: "NOVO DESIGN"
+    },
+    {
+        id: 17,
+        name: "Console Xbox Series X 1TB",
+        category: "consoles",
+        price: 4399.00,
+        oldPrice: 4799.00,
+        image: "https://images.unsplash.com/photo-1605901309584-818e25960a8f?q=80&w=600&auto=format&fit=crop",
+        rating: 4.8,
+        reviews: 185,
+        badge: "PODER MÁXIMO"
+    },
+    {
+        id: 18,
+        name: "Console Nintendo Switch OLED 64GB",
+        category: "consoles",
+        price: 2199.00,
+        oldPrice: 2499.00,
+        image: "https://images.unsplash.com/photo-1578301978693-85fa9c0320b9?q=80&w=600&auto=format&fit=crop",
+        rating: 4.7,
+        reviews: 341,
+        badge: "PORTÁTIL"
+    },
+    {
+        id: 19,
+        name: "Processador AMD Ryzen 7 7800X3D",
+        category: "hardware",
+        price: 2899.00,
+        oldPrice: 3299.00,
+        image: "https://images.unsplash.com/photo-1591488320449-011701bb6704?q=80&w=600&auto=format&fit=crop",
+        rating: 5.0,
+        reviews: 95,
+        badge: "GAMING KING"
+    },
+    {
+        id: 20,
+        name: "Processador Intel Core i9-14900K",
+        category: "hardware",
+        price: 3999.00,
+        oldPrice: 4499.00,
+        image: "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=600&auto=format&fit=crop",
+        rating: 4.9,
+        reviews: 62,
+        badge: "ALTA PERFORMANCE"
+    },
+    {
+        id: 21,
+        name: "Fonte Corsair RM850x 850W 80 Plus Gold",
+        category: "hardware",
+        price: 899.00,
+        oldPrice: 999.00,
+        image: "https://images.unsplash.com/photo-1587202372775-e229f172b9d7?q=80&w=600&auto=format&fit=crop",
+        rating: 4.8,
+        reviews: 110,
+        badge: "SILENCIOSA"
+    },
+    {
+        id: 22,
+        name: "Fonte ASUS ROG Thor 1000W Platinum II",
+        category: "hardware",
+        price: 2499.00,
+        oldPrice: 2899.00,
+        image: "https://images.unsplash.com/photo-1616440347437-b1c73416efc2?q=80&w=600&auto=format&fit=crop",
+        rating: 4.9,
+        reviews: 37,
+        badge: "ROG RGB"
     }
 ];
 
@@ -343,7 +420,12 @@ function renderProducts() {
             <div class="product-img-container">
                 <img src="${product.image}" alt="${product.name}" class="product-img" loading="lazy">
             </div>
-            <span class="product-category">${product.category === 'pc' ? 'PC Gamer' : product.category}</span>
+            <span class="product-category">
+                ${product.category === 'pc' ? 'PC Gamer' : 
+                  product.category === 'consoles' ? 'Console' : 
+                  product.category === 'hardware' ? 'Hardware' : 
+                  product.category === 'perifericos' ? 'Periférico' : 'Jogo'}
+            </span>
             <h3 class="product-name">${product.name}</h3>
             <div class="product-rating">
                 ${starsHTML}
