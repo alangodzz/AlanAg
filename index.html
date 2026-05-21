@@ -63,14 +63,28 @@
         <section class="catalog-header">
             <h2 class="section-title">Nossos <span class="highlight">Equipamentos</span></h2>
             
-            <!-- Filtros de Categorias -->
-            <div class="category-filters">
-                <button class="filter-btn active" data-category="all">Todos</button>
-                <button class="filter-btn" data-category="pc">PCs Gamer</button>
-                <button class="filter-btn" data-category="consoles">Consoles</button>
-                <button class="filter-btn" data-category="hardware">Hardware</button>
-                <button class="filter-btn" data-category="perifericos">Periféricos</button>
-                <button class="filter-btn" data-category="jogos">Jogos</button>
+            <!-- Filtros e Ordenação -->
+            <div class="catalog-controls">
+                <div class="category-filters">
+                    <button class="filter-btn active" data-category="all">Todos</button>
+                    <button class="filter-btn" data-category="pc">PCs Gamer</button>
+                    <button class="filter-btn" data-category="consoles">Consoles</button>
+                    <button class="filter-btn" data-category="hardware">Hardware</button>
+                    <button class="filter-btn" data-category="perifericos">Periféricos</button>
+                    <button class="filter-btn" data-category="jogos">Jogos</button>
+                </div>
+                
+                <div class="sort-container">
+                    <label for="sortSelect" class="sort-label">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="21" y1="10" x2="3" y2="10"></line><line x1="21" y1="6" x2="3" y2="6"></line><line x1="21" y1="14" x2="3" y2="14"></line><line x1="21" y1="18" x2="3" y2="18"></line></svg>
+                    </label>
+                    <select id="sortSelect" class="sort-select">
+                        <option value="default">Relevância</option>
+                        <option value="price-asc">Menor Preço</option>
+                        <option value="price-desc">Maior Preço</option>
+                        <option value="rating-desc">Melhor Avaliados</option>
+                    </select>
+                </div>
             </div>
         </section>
 

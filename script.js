@@ -248,6 +248,7 @@ const products = [
 let cart = [];
 let activeCategory = 'all';
 let searchQuery = '';
+let activeSort = 'default';
 
 // Carregar carrinho do LocalStorage ao iniciar
 function loadCartFromStorage() {
@@ -285,6 +286,15 @@ document.addEventListener('DOMContentLoaded', () => {
             renderProducts();
         });
     });
+
+    // Configurar Ordenação de Produtos
+    const sortSelect = document.getElementById('sortSelect');
+    if (sortSelect) {
+        sortSelect.addEventListener('change', (e) => {
+            activeSort = e.target.value;
+            renderProducts();
+        });
+    }
 
     // Configurar Caixa de Pesquisa
     const searchInput = document.getElementById('searchInput');
@@ -380,12 +390,21 @@ function renderProducts() {
     grid.innerHTML = '';
 
     // Filtrar produtos
-    const filteredProducts = products.filter(product => {
+    let filteredProducts = products.filter(product => {
         const matchesCategory = activeCategory === 'all' || product.category === activeCategory;
         const matchesSearch = product.name.toLowerCase().includes(searchQuery) || 
                               product.category.toLowerCase().includes(searchQuery);
         return matchesCategory && matchesSearch;
     });
+
+    // Ordenar produtos
+    if (activeSort === 'price-asc') {
+        filteredProducts.sort((a, b) => a.price - b.price);
+    } else if (activeSort === 'price-desc') {
+        filteredProducts.sort((a, b) => b.price - a.price);
+    } else if (activeSort === 'rating-desc') {
+        filteredProducts.sort((a, b) => b.rating - a.rating);
+    }
 
     if (filteredProducts.length === 0) {
         grid.innerHTML = `

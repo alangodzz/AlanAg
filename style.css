@@ -450,6 +450,62 @@ body {
     box-shadow: 0 5px 15px rgba(0, 240, 255, 0.25);
 }
 
+/* Catalog Controls & Sorting */
+.catalog-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
+.sort-container {
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--border-color);
+    border-radius: 50px;
+    padding: 0.2rem 1.2rem;
+    transition: all 0.3s;
+    height: 42px;
+}
+
+.sort-container:focus-within {
+    border-color: var(--secondary);
+    box-shadow: 0 0 15px rgba(0, 240, 255, 0.2);
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.sort-label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-sub);
+    margin-right: 0.5rem;
+    cursor: pointer;
+}
+
+.sort-select {
+    background: transparent;
+    border: none;
+    color: var(--text-main);
+    font-size: 0.9rem;
+    font-weight: 600;
+    outline: none;
+    font-family: inherit;
+    cursor: pointer;
+    padding-right: 0.5rem;
+}
+
+.sort-select option {
+    background: var(--bg-dark);
+    color: var(--text-main);
+    padding: 10px;
+    border: none;
+}
+
 /* Products Grid */
 .products-grid {
     display: grid;
